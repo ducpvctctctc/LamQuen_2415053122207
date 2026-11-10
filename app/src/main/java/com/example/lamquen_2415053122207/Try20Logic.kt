@@ -1,5 +1,4 @@
 package com.example.lamquen_2415053122207
-
 object Try20Logic {
 
     fun tenHopLe(raw: String): String? {
@@ -14,5 +13,9 @@ object Try20Logic {
 
     fun loiChao(ten: String, soLuong: Int): String {
         return "Xin chào $ten, số lượng: $soLuong"
+    }
+
+    fun phanLoai(soLuong: Int): String {
+        return if (soLuong < 5) "Ít" else "Nhiều"
     }
 }

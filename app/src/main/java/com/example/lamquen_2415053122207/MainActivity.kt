@@ -37,11 +37,14 @@ class MainActivity : ComponentActivity() {
                 edtSoLuong.error = "Số lượng phải từ 1 đến 9"
             }
 
+
             if (ten != null && soLuong != null) {
-                txtKetQua.text = Try20Logic.loiChao(
-                    ten, soLuong
-                )
+                val loiChao = Try20Logic.loiChao(ten, soLuong)
+                val nhan = Try20Logic.phanLoai(soLuong)
+
+                txtKetQua.text = "$loiChao\nPhân loại: $nhan"
             }
+
         }
 
         btnXoa.setOnClickListener {
